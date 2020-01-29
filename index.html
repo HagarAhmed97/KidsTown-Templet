@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Kids Twon Web Deisgn | Welcome</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+      <style>
+body {
+  background-image: url("./img/top.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+  
+}
+</style>
+  </head>
+  <body>
+    
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Kids</span>Twon</h1>
+        </div>
+        <nav >
+          <ul >
+            <li>
+              <button class="button5"><a href="studio.html"> معرض الصور  </a></button></li>
+            <li>
+              <button class="button5"><a href="contactus.html">خدماتنا </a></button></li>
+             <li>
+              <button class="button5"><a href="about.html">من نحن</a></button></li>
+            <li class="current">
+               <button class="button5">
+              <a href="index.html">  الصفحة الرئيسية  </a></button> </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+   <section id="showcase">
+ <div class="images" style="max-width:100%;height:fit-content;">
+  <img class="mySlides" src="./img/showcase.jpg" style="width:100%">
+  
+  <img class="mySlides" src="./img/showcase2.jpg" style="width:100%">
+  <img class="mySlides" src="./img/showcase3.jpg" style="width:100%">
+</div>
+    </section>
+
+    
+
+    <section id="newsletter">
+      <div class="container">
+        <div class="imagee">
+        <img src="./img/footerr.PNG" width="500px" height="350px">
+      </div>
+  </div>
+    </section>
+
+    <footer id="news">
+      <div class="container">
+       <h5>Kids Web Deisgn, Copyright &copy; 2019</h5>
+        <div class="links">
+      <a href="https://www.facebook.com/groups/2126398650741255/?ref=group_header" class="fa fa-facebook" target="_blank"></a>
+      <a href="#"  target="_blank"class="fa fa-twitter"></a>
+      <a href="#"  target="_blank" class="fa fa-google"></a>
+       </div>
+      </div>
+    </footer>
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+  </body>
+</html>
